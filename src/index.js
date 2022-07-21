@@ -27,7 +27,7 @@ const vueNaverMaps = {
         const script = document.createElement('script');
         if (script) {
           script.setAttribute('src', URL);
-          script.id = 'naver-map-load';
+          script.className = 'naver-map-load';
           script.setAttribute('async', '');
           script.setAttribute('defer', '');
           document.head.appendChild(script);

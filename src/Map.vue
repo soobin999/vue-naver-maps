@@ -313,7 +313,7 @@ export default {
     },
     mounted() {
         if (window.naver) this.loadNaverMapsComponents();
-        else document.getElementById('naver-map-load').onload = () => window.naver.maps.onJSContentLoaded = this.loadNaverMapsComponents;
+        else document.getElementsByClassName('naver-map-load').onload = () => window.naver.maps.onJSContentLoaded = this.loadNaverMapsComponents;
     },
     destroyed() {
         window.$naverMapsLoaded = false;
